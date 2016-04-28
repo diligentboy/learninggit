@@ -1,0 +1,59 @@
+POST /api/AppShoppingCart/PostGetOrderList?from=app
+
+数据格式
+{
+    "message":"",
+    "status":200,
+    "totalRecords":86,
+    "data":[
+        {
+            "total_weight":390,//总重
+            "operator_mobile":"18751556867",
+            "intent_order_code":"YXD1603510519",//意向单编码 code用于显示,id用于操作
+            "outbound_amount":56,
+            "batch_id":1459328170962106,//付款的时候 待支付状态订单使用
+            "discount_amount":0,
+            "remark":"", 
+            "source_flag":"0",//0:信用行订单，1:吆喝订单
+            "buy_type":0,
+            "status":-1,//XYH订单状态枚举值
+            "operator_name":"高*",
+            "sale_order_id":0,//付款的时候 待还款状态订单使用,查看详情的时候 待还款状态使用,
+            "short_amount":36,
+            "total_quantity":1,
+            "pro_data":[
+                {
+                    "material_code":"201",//材质
+                    "sale_money":2964,
+                    "quantity":1,//数量
+                    "package_type":"0",
+                    "sale_price":7600,
+                    "shape":0,
+                    "intent_order_detail_id":1459328170703504,
+                    "intent_order_id":1459328170547654,
+                    "category_name":"板",//分类名称
+                    "spec_code":"2.9 * 1119 * 2009",//规格
+                    "reference_thick":"2.8",//参厚
+                    "pro_category_name":"板",//顶级分类名称
+                    "manufacturer_name":"宁波宝新",//厂家
+                    "status":-1,
+                    "weight":390,
+                    "edge_name":"毛边",//边部
+                    "level_name":"L2",//等级
+                    "house_name":"无锡华中库",//库名
+                    "status_name":"无效",
+                    "shape_name":"",//形状
+                    "suface_code":"2B(3/4H)",//表面
+                    "create_time":"2016-03-30 16:56:10.000"
+                }
+            ],
+            "total_sales":2964,
+            "pay_id":0,
+            "status_name":"无效",
+            "intent_order_id":1459328170547654,//查看详情的时候 除待还款状态其余状态使用
+            "create_time":"2016-03-30 16:56:10.000",
+            "expired_time":"2016-03-30 17:26:10.000",//待支付状态时候使用 表示剩余毫秒数  (这里的格式有问题)
+            "invoice_company":"信用行科技淮安有限公司"
+        }
+    ]
+}
